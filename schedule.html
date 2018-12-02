@@ -27,6 +27,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/sb-admin.css" rel="stylesheet" />
+      
+      
+
   </head>
 
   <body id="page-top">
@@ -248,285 +251,30 @@
         <div class="container-fluid">
           <!-- Breadcrumbs -->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="#">Dashboard / Schedule</a></li>
             <!-- <li class="breadcrumb-item active">Overview</li> -->
           </ol>
 
-          <!-- Icon Cards -->
-          <div class="row">
-            <div class="col-xl-3 col-sm-6 mb-3">
-              <div class="card text-white bg-success o-hidden h-100">
-                <a class="text-white" href="schedule.html">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-comments"></i>
-                    </div>
-                    <div class="mr-5">See Schedule</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 mb-3">
-              <div class="card text-white bg-danger o-hidden h-100">
-                <a class="text-white" href="math1z03annoucements.html">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-comments"></i>
-                    </div>
-                    <div class="mr-5">Finance Summary</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!--
-              <div class="col-xl-3 col-sm-6 mb-3">
-                <div class="card text-white bg-success o-hidden h-100">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-shopping-cart"></i>
-                    </div>
-                    <div class="mr-5">123 New Orders!</div>
-                  </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
-                    <span class="float-right">
-                      <i class="fas fa-angle-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-3">
-                <div class="card text-white bg-danger o-hidden h-100">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-life-ring"></i>
-                    </div>
-                    <div class="mr-5">13 New Tickets!</div>
-                  </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
-                    <span class="float-right">
-                      <i class="fas fa-angle-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          -->
+
 
           <!-- Unread Posts -->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fas fa-book"></i> Unread Posts
+              <i class="fas fa-book"></i> Your Schedule
             </div>
             <div class="card-body">
-              <div class="card mb-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
+
+                
+                <div class="container">
+                    <img src="images/schedule.png" class="img-fluid" alt="Responsive image">
+</div>
+                
+                
             </div>
-            <div class="card-footer small text-muted">
-              Updated yesterday at 11:59 PM
-            </div>
+
           </div>
 
-          <!-- Upcoming deadlines -->
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-calendar-check"></i> Upcoming deadlines
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table
-                  class="table table-bordered"
-                  id="dataTable"
-                  width="100%"
-                  cellspacing="0"
-                >
-                  <thead>
-                    <tr>
-                      <th>Course</th>
-                      <th>Assessment</th>
-                      <th>Weight</th>
-                      <th>Deadline</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Course</th>
-                      <th>Assessment</th>
-                      <th>Weight</th>
-                      <th>Deadline</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Assignment 6</td>
-                      <td>5%</td>
-                      <td>2018/11/30</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Quiz 5</td>
-                      <td>6%</td>
-                      <td>2018/12/03</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Lon Capa 10</td>
-                      <td>2%</td>
-                      <td>2018/11/29</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Major Lab 5</td>
-                      <td>5%</td>
-                      <td>2018/11/27</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Nelson Quiz 5</td>
-                      <td>3%</td>
-                      <td>2018/11/25</td>
-                    </tr>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Assignment 5</td>
-                      <td>5%</td>
-                      <td>2018/11/16</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Quiz 4</td>
-                      <td>6%</td>
-                      <td>2018/11/19</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Lon Capa 9</td>
-                      <td>2%</td>
-                      <td>2018/11/22</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Major Lab 4</td>
-                      <td>5%</td>
-                      <td>2018/11/13</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Nelson Quiz 4</td>
-                      <td>3%</td>
-                      <td>2018/11/11</td>
-                    </tr>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Assignment 3</td>
-                      <td>5%</td>
-                      <td>2018/11/02</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Quiz 3</td>
-                      <td>6%</td>
-                      <td>2018/11/05</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Lon Capa 8</td>
-                      <td>2%</td>
-                      <td>2018/11/15</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Major Lab 3</td>
-                      <td>5%</td>
-                      <td>2018/10/30</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Nelson Quiz 3</td>
-                      <td>3%</td>
-                      <td>2018/10/27</td>
-                    </tr>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Midterm 2</td>
-                      <td>20%</td>
-                      <td>2018/11/12</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Midterm 2</td>
-                      <td>15%</td>
-                      <td>2018/11/09</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Midterm 2</td>
-                      <td>20%</td>
-                      <td>2018/11/05</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Midterm 2</td>
-                      <td>15%</td>
-                      <td>2018/11/16</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Midterm 2</td>
-                      <td>20%</td>
-                      <td>2018/11/14</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="card-footer small text-muted">
-              Updated yesterday at 3:35 PM
-            </div>
-          </div>
+
         </div>
         <!-- /.container-fluid -->
 

@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>UniFlow</title>
+    <title>SB Admin - Login</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -22,473 +22,69 @@
       type="text/css"
     />
 
-    <!-- Page level plugin CSS -->
-    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
-
     <!-- Custom styles for this template -->
     <link href="css/sb-admin.css" rel="stylesheet" />
   </head>
 
-  <body id="page-top">
-    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-      <a class="navbar-brand mr-1" href="index.html">Uniflow</a>
-
-      <button
-        class="btn btn-link btn-sm text-white order-1 order-sm-0"
-        id="sidebarToggle"
-        href="#"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Navbar Search -->
-      <form
-        class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"
-      >
-        <div class="input-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Search for..."
-            aria-label="Search"
-            aria-describedby="basic-addon2"
-          />
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-
-      <!-- Navbar -->
-      <ul class="navbar-nav ml-auto ml-md-0">
-        <li class="nav-item dropdown no-arrow">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="userDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="fas fa-user-circle fa-fw"></i>
-          </a>
-          <div
-            class="dropdown-menu dropdown-menu-right"
-            aria-labelledby="userDropdown"
-          >
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Activity Log</a>
-            <div class="dropdown-divider"></div>
-            <a
-              class="dropdown-item"
-              href="#"
-              data-toggle="modal"
-              data-target="#logoutModal"
-              >Logout</a
-            >
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <div id="wrapper">
-      <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="math1z03annoucements.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i> <span>Math 1Z03</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-chart-area"></i> <span>Course 2</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-chart-area"></i> <span>Course 3</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-chart-area"></i> <span>Course 4</span></a
-          >
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-chart-area"></i> <span>Course 5</span></a
-          >
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fas fa-fw fa-table"></i> <span>Course 6</span></a
-          >
-        </li>
-      </ul>
-
-      <div id="content-wrapper">
-        <div class="container-fluid">
-          <!-- Breadcrumbs -->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-            <!-- <li class="breadcrumb-item active">Overview</li> -->
-          </ol>
-
-          <!-- Icon Cards -->
-          <div class="row">
-            <div class="col-xl-3 col-sm-6 mb-3">
-              <div class="card text-white bg-success o-hidden h-100">
-                <a class="text-white" href="schedule.html">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-comments"></i>
-                    </div>
-                    <div class="mr-5">See Schedule</div>
-                  </div>
-                </a>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-header">Login</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Email address"
+                  required="required"
+                  autofocus="autofocus"
+                  name="userid"
+                />
+                <label for="inputEmail">Email address</label>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 mb-3">
-              <div class="card text-white bg-danger o-hidden h-100">
-                <a class="text-white" href="finance.html">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-comments"></i>
-                    </div>
-                    <div class="mr-5">Finance Summary</div>
-                  </div>
-                </a>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="form-control"
+                  placeholder="Password"
+                  required="required"
+                  name="pswrd"
+                />
+                <label for="inputPassword">Password</label>
               </div>
             </div>
-          </div>
-          <!--
-              <div class="col-xl-3 col-sm-6 mb-3">
-                <div class="card text-white bg-success o-hidden h-100">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-shopping-cart"></i>
-                    </div>
-                    <div class="mr-5">123 New Orders!</div>
-                  </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
-                    <span class="float-right">
-                      <i class="fas fa-angle-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 mb-3">
-                <div class="card text-white bg-danger o-hidden h-100">
-                  <div class="card-body">
-                    <div class="card-body-icon">
-                      <i class="fas fa-fw fa-life-ring"></i>
-                    </div>
-                    <div class="mr-5">13 New Tickets!</div>
-                  </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                    <span class="float-left">View Details</span>
-                    <span class="float-right">
-                      <i class="fas fa-angle-right"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          -->
-
-          <!-- Unread Posts -->
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-book"></i> Unread Posts
-            </div>
-            <div class="card-body">
-              <div class="card mb-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Math 1Z03</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
-                      29 November 2018
-                    </h6>
-                    <p class="card-text">Assignment 3 grades updated.</p>
-                    <a href="math1z03grades.html" class="card-link"
-                      >See Math 1Z03 Grades</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Physics 1D03</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
-                      27 November 2018
-                    </h6>
-                    <p class="card-text">
-                      As the semester comes to a near end, it is only right I
-                      ask you guys to complete the course evaluation for this
-                      course. <br />
-                      <b>
-                        Note: If 85% of the class completes this course
-                        evaluation, only your seven best out of the ten lon capa
-                        assignments will contribute to your grade and an
-                        additional 1% to your final grade will be added.
-                      </b>
-                    </p>
-                    <a href="#" class="card-link"
-                      >Link to this course's annoucements</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Math 1Z03</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">
-                      19 November 2018
-                    </h6>
-                    <p class="card-text">
-                      I've been asked to post the following concerning an
-                      on-campus study: McMaster Drug Use Study - Participants
-                      Needed for Online Survey We are collecting drug use data
-                      among undergraduate students. Participation involves the
-                      completion of a 17 question survey, which will take 2-10
-                      minutes to complete, depending on your level of drug use.
-                      Participants will have the chance to win 1 of 33 Campus
-                      Store gift cards, including 3 grand prizes of $100.
-                      Contact me for details.
-                    </p>
-                    <a href="math1z03contactprof.html" class="card-link"
-                      >Contact Professor</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer small text-muted">
-              Updated yesterday at 11:59 PM
-            </div>
-          </div>
-
-          <!-- Upcoming deadlines -->
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-calendar-check"></i> Upcoming deadlines
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table
-                  class="table table-bordered"
-                  id="dataTable"
-                  width="100%"
-                  cellspacing="0"
-                >
-                  <thead>
-                    <tr>
-                      <th>Course</th>
-                      <th>Assessment</th>
-                      <th>Weight</th>
-                      <th>Deadline</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Course</th>
-                      <th>Assessment</th>
-                      <th>Weight</th>
-                      <th>Deadline</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Assignment 6</td>
-                      <td>5%</td>
-                      <td>2018/11/30</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Quiz 5</td>
-                      <td>6%</td>
-                      <td>2018/12/03</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Lon Capa 10</td>
-                      <td>2%</td>
-                      <td>2018/11/29</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Major Lab 5</td>
-                      <td>5%</td>
-                      <td>2018/11/27</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Nelson Quiz 5</td>
-                      <td>3%</td>
-                      <td>2018/11/25</td>
-                    </tr>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Assignment 5</td>
-                      <td>5%</td>
-                      <td>2018/11/16</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Quiz 4</td>
-                      <td>6%</td>
-                      <td>2018/11/19</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Lon Capa 9</td>
-                      <td>2%</td>
-                      <td>2018/11/22</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Major Lab 4</td>
-                      <td>5%</td>
-                      <td>2018/11/13</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Nelson Quiz 4</td>
-                      <td>3%</td>
-                      <td>2018/11/11</td>
-                    </tr>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Assignment 3</td>
-                      <td>5%</td>
-                      <td>2018/11/02</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Quiz 3</td>
-                      <td>6%</td>
-                      <td>2018/11/05</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Lon Capa 8</td>
-                      <td>2%</td>
-                      <td>2018/11/15</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Major Lab 3</td>
-                      <td>5%</td>
-                      <td>2018/10/30</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Nelson Quiz 3</td>
-                      <td>3%</td>
-                      <td>2018/10/27</td>
-                    </tr>
-                    <tr>
-                      <td>Math 1Z03</td>
-                      <td>Midterm 2</td>
-                      <td>20%</td>
-                      <td>2018/11/12</td>
-                    </tr>
-                    <tr>
-                      <td>Chem 1E03</td>
-                      <td>Midterm 2</td>
-                      <td>15%</td>
-                      <td>2018/11/09</td>
-                    </tr>
-                    <tr>
-                      <td>Physics 1D03</td>
-                      <td>Midterm 2</td>
-                      <td>20%</td>
-                      <td>2018/11/05</td>
-                    </tr>
-                    <tr>
-                      <td>Engineering 1D04</td>
-                      <td>Midterm 2</td>
-                      <td>15%</td>
-                      <td>2018/11/16</td>
-                    </tr>
-                    <tr>
-                      <td>Econ 1B03</td>
-                      <td>Midterm 2</td>
-                      <td>20%</td>
-                      <td>2018/11/14</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="card-footer small text-muted">
-              Updated yesterday at 3:35 PM
-            </div>
-          </div>
-        </div>
-        <!-- /.container-fluid -->
-
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright © UniFlow 2018</span>
-            </div>
-          </div>
-        </footer>
-      </div>
-      <!-- /.content-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- Scroll to Top Button -->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal -->
-    <div
-      class="modal fade"
-      id="logoutModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button
-              class="close"
+            <input
               type="button"
-              data-dismiss="modal"
-              aria-label="Close"
+              class="btn btn-primary btn-block"
+              onclick="check(this.form)"
+              value="Login"
+            />
+          </form>
+          <script language="javascript">
+            function check(form) {
+              /*function to check userid & password*/
+              /*the following code checkes whether the entered userid and password are matching*/
+              if (
+                form.userid.value == "tester@tester.com" &&
+                form.pswrd.value == "tester"
+              ) {
+                window.location.href =
+                  "dashboard.html"; /*opens the target page while Id & password matches*/
+              } else {
+                alert("Error Password or Username"); /*displays error message*/
+              }
+            }
+          </script>
+          <div class="text-center">
+            <a class="d-block small mt-3" href="forgot-password.html"
+              >Forgot Password?</a
             >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Select "Logout" below if you are ready to end your current session.
-          </div>
-          <div class="modal-footer">
-            <button
-              class="btn btn-secondary"
-              type="button"
-              data-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
           </div>
         </div>
       </div>
@@ -500,17 +96,5 @@
 
     <!-- Core plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Page level plugin JavaScript -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
-    <!-- Custom scripts for all pages -->
-    <script src="js/sb-admin.min.js"></script>
-
-    <!-- Demo scripts for this page -->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
   </body>
 </html>
